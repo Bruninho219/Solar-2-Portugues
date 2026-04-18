@@ -1,0 +1,779 @@
+// !!!!!!!!! ALERTA DE SPOILER. NÃO LEIA ESTE ARQUIVO A MENOS QUE TENHA COMPLETADO O JOGO !!!!!!!!!!!
+
+//~~~~~~~~~~~~~~~~~~ ARQUIVO DE IDIOMA EM INGLÊS ~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+// Contém todos os textos do jogo no formato:
+// nome : valor 
+// Comentários são definidos por linhas que começam com //
+// O caractere \n indica quebra de linha.
+// Qualquer coisa como {0} ou {1} representa texto definido no código e deve ser mantido.
+
+// Este jogo pode ser traduzido para outros idiomas baseados em latim ou cirílico (desculpe, idiomas asiáticos não são suportados no momento)
+// Você pode testar se o jogo suporta o idioma colocando o alfabeto completo no item "splash_pc". Se algum caractere aparecer como ?, ele não é suportado.
+// Para usar outro idioma no jogo, copie este arquivo e traduza as partes de 'valor' (lado direito).
+// Nomeie o arquivo como "strung.[codigo_idioma].txt"    por exemplo, francês seria "strung.fr.txt"
+// Se o Windows estiver configurado com esse idioma padrão, o jogo usará automaticamente.
+// Coloque o arquivo na pasta "Languages" no diretório de instalação.
+// Ou dentro da pasta de salvamento do jogo (onde fica o arquivo "config"), crie uma pasta "Languages" e coloque o arquivo lá.
+// A pasta de salvamento geralmente fica em "Documents/My Games/Solar2". Procure por "config" no sistema após rodar o jogo pelo menos uma vez.
+// Além disso, para o jogo detectar, vá no arquivo config e na opção "AvailableLanguages" adicione os códigos separados por vírgula, exemplo:
+// AvailableLanguages=en,es,fr
+// Se configurado corretamente, o idioma aparecerá nas opções.
+// arquivo de idioma v1.23
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  GERAL / DIVERSOS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// itens genéricos de menu/interface
+menu_back		:	Voltar
+menu_okay		:	OK
+menu_confirm	:	Confirmar
+menu_cancel		:	Cancelar	
+menu_complete	:	Completo
+menu_incomplete	:	Incompleto
+menu_continue	:	Continuar
+menu_exit		:	Sair
+menu_applyandexit	:	Aplicar Configurações e Sair
+menu_notdemo	:	Não disponível na versão demo.
+menu_start		:	Iniciar
+
+// caixa de mensagem e botões de instrução
+message_select	:	<Enter> -
+message_cancel	:	<Esc> -
+message_selectx	:	<A> -
+message_cancelx	:	<B> -
+message_selectt :	Toque -
+message_cancelt	:	Toque -
+
+message_demosave		:	O progresso não pode ser salvo na versão demo.
+
+// informações diversas das missões
+missions_timeremaining	:	Tempo Restante:
+missions_distancetravelled	:	Distância Percorrida:
+missions_timepopup_over		:	Tempo da Missão:
+missions_timepopup_under	:	{0} min {1} seg
+missions_speedcycle_over	:	Tempo do Ciclo de Velocidade:
+
+// mensagens aleatórias das missões
+missions_introcutscene		:	Se você deseja fazer uma torta de maçã do zero, \nvocê deve primeiro inventar o universo. \n                                                                   - Carl Sagan
+missions_godmodeunlocked_1_1	:	As Opções de Deus agora estão totalmente desbloqueadas.
+missions_godmodeunlocked_1_2	:	As Opções de Deus estão quase totalmente desbloqueadas. \nPara desbloquear a Matéria Escura, termine o jogo sem usar as opções de deus!
+missions_godmodeunlocked_2		:	Precisa de algo para fazer? Tente obter todas as conquistas. \nVeja o quão grande você consegue criar um sistema multiestelar! \nMuitas missões de desafio para completar!
+missions_godmodeunlocked_2x		:	Precisa de algo para fazer? Tente obter todos os prêmios. Alguns são bem difíceis. \nVeja o quão grande você consegue criar um sistema multiestelar! \nMuitas missões de desafio para completar!
+missions_godmodeunlocked_cheat	:	Tente completar todas as missões sem usar as opções de deus! \nAssim você desbloqueará a matéria escura no menu.
+missions_godmodeunlocked_cheatbeaten	:	Matéria Escura agora desbloqueada nas Opções de Deus.
+
+missions_bigcrunch		:	Você ainda não terminou, sabia? Ainda tenho tarefas para você. \nAinda quer ser um deus como eu? Prove. Complete minhas missões.
+
+// Tela inicial
+splash_pc		:	Pressione <ENTER> ou <START>
+splash_xbox 	:	Pressione <START>
+splash_tablet	:	Toque para INICIAR
+splash_tabletdemo	:	Toque para INICIAR Demo
+
+// modo seguro (android)
+safemode_message 	:  Modo Seguro: \nSe o jogo travar após a tela inicial, use o modo seguro. \nEle reduz o desempenho, mas fora isso funciona igual ao modo normal.
+safemode_activate  	:	Ativar Modo Seguro
+safemode_deactivate 	: 	Desativar Modo Seguro
+safemode_on 		:	Modo Seguro: Ligado
+safemode_off 		: 	Modo Seguro: Desligado
+safemode_description	:	O jogo não está funcionando? Toque aqui
+
+// ~~~~~~~~~~~~~~~~~~~~~  MENU DE PAUSA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// opções do menu de pausa
+pause_return		:	Voltar ao Jogo
+pause_missions		:	Missões - História
+pause_challenge		:	Missões - Desafios
+pause_savedsystems	:	Sistemas Salvos
+pause_basicrespawn	:	Respawn Básico
+pause_objectives	:	Conquistas
+pause_objectivesx	:	Prêmios
+pause_purchase		:	Obter Versão Completa
+pause_controls		:	Controles
+pause_physics		:	Opções de Deus
+pause_options		:	Opções
+pause_exit		:	Salvar e Sair
+pause_save		:	Salvar Progresso
+
+pause_stats		:	Estatísticas:
+pause_statstime	:	{0} horas {1} min
+
+pause_godon		:	Opções de Deus Ativas
+pause_darkon	:	Matéria Escura Ativa
+
+// créditos
+pause_credits1	:	Criado e Desenvolvido por:
+pause_credits2	:	Música e Sons por:
+
+// não pode dar respawn; cutscene ou missão de desafio 
+pause_cannotrespawn		:	Não é possível renascer agora.
+
+// caixa de confirmação de saída
+pause_areyousure	:	Tem certeza que deseja sair? \nSeu sistema atual será salvo.
+pause_saveandexit	:	Salvar e Sair
+
+pause_saveprogress	:	Progresso salvo. \nAgora você pode sair do jogo.
+
+pause_areyouxboxnoprofile	:	Você precisa entrar na sua conta neste controle para salvar. \nVocê pode sair sem salvar ou fazer login.
+
+pause_exittrial		:	O progresso não é salvo na versão demo. \nTem certeza que deseja sair?
+pause_savetrial		:	O progresso não é salvo na versão demo.
+pause_exitnosave	:	Sair sem salvar
+
+pause_xboxtrialfail	:	Você precisa estar conectado ao Xbox LIVE \ne ter permissão para comprar jogos.
+pause_xboxsignin	:	Entrar
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  TELA DE RESPAWN BÁSICO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+basicrespawn_title	:	Selecione um objeto para renascer como:
+
+// tentou dar respawn como um corpo não desbloqueado
+basicrespawn_needunlock		:	Você precisa jogar com esse objeto no jogo para desbloqueá-lo.
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  TELA DE CONTROLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+controls_title		:	Controles:
+
+// nomes dos controles
+controls_movement	:	Movimento:
+controls_absorb		:	Absorver menor objeto:
+controls_asteroid	:	Absorver todos os asteroides:
+controls_planet		:	Absorver planeta selecionado:
+controls_toggleinterface	:	Alternar interface:
+controls_interfaceup		:	Alternar interface para cima:
+controls_interfacedown		:	Alternar interface para baixo:
+controls_abort				:	Abortar missão:
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  TELA DE OPÇÕES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+options_title	:	Opções:
+
+options_fullscreen	:	Tela Cheia
+options_windowed	:	Janela
+options_borderless	:	Janela sem Bordas
+
+// itens do menu de opções
+options_resolution	:	Resolução
+options_displaymode	:	Modo de Exibição
+options_musicvolume	:	Volume da Música
+options_soundvolume	:	Volume dos Efeitos
+options_rumble		:	Vibração do Controle 
+options_language	:	Idioma
+options_tutorials	:	Reiniciar Tutoriais
+options_clearall	:	Apagar Todos os Dados
+options_clearmissions	:	Apagar Progresso das Missões da História
+options_god		:	Opções Especiais
+options_relative	:	Controle Virtual
+options_orientation	:	Orientação
+options_scaling		:	Escala da Interface
+
+options_rumble1		:	Ligado
+options_rumble2		:	Desligado
+
+options_relative0	:	Nenhum
+options_relative1	:	Esquerda
+options_relative2	:	Direita	
+
+// descrições dos itens do menu
+options_resolution_description	:	Automático definirá a resolução de acordo com o seu monitor atual. \nEsta é a configuração recomendada, a menos que você tenha problemas de desempenho.
+options_displaymode_description	:
+options_musicvolume_description	:
+options_soundvolume_description	:
+options_rumble_description		:
+options_language_description	:	Escolha entre os idiomas instalados atualmente. \nPode ser necessário salvar, sair e reiniciar o jogo.
+options_tutorials_description	:	Selecione esta opção se quiser refazer todos os tutoriais do jogo.
+options_clearall_description	:	Apaga todos os dados salvos do jogo e reinicia o progresso.
+options_clearmissions_description	:	Apaga todo o progresso das missões da história. Isso não remove itens já desbloqueados.
+options_god_description				:
+options_scaling_description		:
+
+options_relative_description	:	Use um controle virtual em vez de tocar em qualquer lugar da tela. \nVeja os controles para mais instruções.
+
+
+// confirmação ao apagar progresso
+options_clearareyousure				:	Tem certeza que deseja apagar todos os dados do jogo? \nSerá como começar do zero.
+options_clearmissionsareyousure		:	Tem certeza que deseja apagar todo o progresso das missões? \nIsso não remove nada desbloqueado pelas missões.
+options_cleartutorialsareyousure	:	Tem certeza que deseja reiniciar os tutoriais?
+
+options_orientation_description		:	Definir orientação em modo paisagem
+options_orientation0		:	Sensor
+options_orientation1		:	Forçar Esquerda
+options_orientation2		:	Forçar Direita
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  TELA DE MODO DEUS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// título
+god_title	:	Opções Especiais:
+god_physics	:	Opções de Deus:
+
+// nomes dos itens
+
+god_gravfactor			:	Fator de Gravidade
+god_collisiondamage		:	Fator de Dano por Colisão
+god_playerspeed			:	Fator de Velocidade do Jogador
+god_lifebuild			:	Fator de Tempo de Criação de Vida
+god_lifeships			:	Naves Extras da Vida
+god_lifeturrets			:	Torretas Extras da Vida
+god_shipspeed			:	Fator de Velocidade das Naves
+
+god_clearboss			:	Apagar Progresso do Chefe
+god_starcolor			:	Modo de Cor das Estrelas
+god_spawnmode			:	Menu de Spawn Instantâneo
+god_actionmode			:	Modo de Ação
+god_darkmatter			:	Matéria Escura
+god_default				:	Restaurar Padrão
+
+god_unlock			:	Desbloqueia ao atingir {0} % de conclusão das missões da história.
+god_unlock2			:	Desbloqueia ao completar todas as missões da história.
+god_unlock3			:	Desbloqueia ao completar todas as missões da história sem trapaças.
+
+// descrições das opções de deus
+god_gravfactor_description			:	Fator multiplicador de gravidade. \n1 é a gravidade normal. 2 é o dobro da gravidade. Valores negativos irão repelir em vez de atrair.
+god_collisiondamage_description		:	Fator multiplicador de dano por colisão. \n1 é o dano normal. 2 é o dobro de dano em colisões. 0 significa nenhum dano em colisões.
+god_playerspeed_description			:	Fator multiplicador de velocidade do jogador. \n1 é a velocidade normal. 2 é o dobro da velocidade.
+god_lifebuild_description			:	Fator multiplicador do tempo de criação de vida. \n1 é o tempo normal. 0 significa criação instantânea.
+god_lifeships_description			:	Slots extras de naves. \nPermite que a vida crie mais naves.
+god_lifeturrets_description			:	Slots extras de torretas. \nPermite que a vida crie mais torretas.
+god_shipspeed_description			:	Fator de velocidade das naves. \n1 é a velocidade normal. 2 é o dobro da velocidade.
+
+god_clearboss_description			:	Apaga o progresso da missão do chefe para que você possa jogá-la novamente.
+god_default_description				:	Redefine todas as variáveis para o padrão.
+god_starcolor_description			:	Opções gráficas das estrelas.
+god_spawnmode_description			:	Ativa os botões de spawn. Use {0} para alternar entre as opções. \nUse {1} e clique esquerdo para criar.
+god_spawnmode_descriptiont			:	Ativa os botões de spawn. \nCom "Atirar em" e "Posicionar em", use toque duplo. \nSe o menu sobrepor o controle virtual, reduza a escala da interface nas opções.
+god_darkmatter_description			:	Selecione para renascer como um asteroide de matéria escura e entrar em um novo universo perigoso.
+god_actionmode_description			:	'Absorver' é a ação normal. \n'Disparar para fora' lança objetos em órbita ao pressionar absorver.
+
+// confirmação padrão	
+god_defaultareyousure		: 	Tem certeza que deseja redefinir todos os valores?
+god_darkmatterareyousure	:	Tem certeza que deseja spawnar como um asteroide de matéria escura? \nVocê perderá seu sistema atual.
+god_clearbossareyousure		:	Tem certeza que deseja apagar o progresso da missão do chefe? \nO modo deus continuará desbloqueado.
+
+// opções de cor da estrela
+god_starcolor0	:	Normal
+god_starcolor1	:	Ciclo Lento
+god_starcolor2	:	Ciclo Rápido
+god_starcolor3	:	Baseado na Velocidade
+
+// opções de spawn
+god_spawnmode0	:	Desligado
+god_spawnmode1	:	Próximo
+god_spawnmode2	:	Disparar
+god_spawnmode3	:	Posicionar em
+god_spawnmode4	:	Disparar em
+
+
+god_spawntitle0 	:	Nenhum 
+god_spawntitle1 	:	Asteroide
+god_spawntitle2 	:	Matéria Escura
+god_spawntitle3 	:	Planeta
+god_spawntitle4 	:	Estrela
+god_spawntitle5 	:	Buraco Negro
+
+// opções de modo de ação
+god_actionmode0		:	Absorver
+god_actionmode1		:	Disparar para fora
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  TELA DE OBJETIVOS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// instruções
+objectivesscreen_instructions	:	Conquistas são passivas e podem ser completadas no seu tempo.
+objectivesscreen_instructionsx	:	Prêmios são passivos e podem ser completados no seu tempo.
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  TELA DE SLOTS DE SISTEMA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+slots_title		:	Sistemas Salvos:
+slots_description	:	Você pode salvar seu sistema atual e renascer depois. \nSeu sistema atual é salvo e carregado automaticamente ao sair e entrar no jogo.
+
+// nomes diversos
+slots_empty		:	Vazio
+slots_planet	:	Planeta
+slots_planets	:	Planetas
+slots_stars		:	Estrelas
+slots_asteroid	:	Asteroide
+slots_asteroids	:	Asteroides
+
+slots_savecurrent	:	Salvar Sistema Atual
+slots_respawn		:	Renascer como este Sistema
+
+slots_nosystemtosave	:	Você não tem nenhum sistema para salvar!
+
+slots_override		:	Tem certeza que deseja sobrescrever este slot? \nEssa ação não pode ser desfeita.
+
+slots_loadempty		:	Você precisa salvar um sistema neste slot primeiro!
+
+slots_challenge		:	Você não pode salvar um sistema durante uma missão de desafio!
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~ TELA DE MISSÕES ~~~~~~~~~~~~~~~~~~~~~~~~
+
+missionscreen_title			:	Progresso das Missões da História:
+missionscreen_description	:	Jogue as missões seguindo as setas no jogo (ative a interface). \nSelecione uma missão concluída aqui para jogá-la novamente. \nComplete sem usar Opções de Deus para conclusão perfeita!
+
+missionscreen_asteroid_title	:	Asteroide 
+missionscreen_planet_title		:	Planeta 
+missionscreen_star_title		:	Estrela 
+
+
+missionscreen_asteroidtree1		:	Assassino
+missionscreen_asteroidtree2		:	Diversão e Jogos
+missionscreen_asteroidtree3		:	Extinção
+missionscreen_asteroidtree4		:	Melhor Amigo
+
+missionscreen_planettree1		:	Amor Nômade
+missionscreen_planettree2		:	Experimento
+missionscreen_planettree3		:	Bela Arte
+missionscreen_planettree4		:	Concerto
+
+missionscreen_startree1			:	Duelo
+missionscreen_startree2			:	Invasores
+missionscreen_startree3			:	Irmandade
+missionscreen_startree4			:	Assalto
+
+missionscreen_areyousure		:	Tem certeza que deseja apagar o progresso desta missão?  
+missionscreen_wrongbody1		:	Você precisa estar jogando como um asteroide primeiro!
+missionscreen_wrongbody2		:	Você precisa estar jogando como um planeta primeiro!
+missionscreen_wrongbody3		:	Você precisa estar jogando como uma estrela primeiro!
+missionscreen_notcompleted		:	Você precisa encontrar e completar a missão antes de poder jogá-la novamente! \nAtive a interface e siga as setas!
+missionscreen_challenge			: 	Não é possível iniciar uma missão enquanto um desafio estiver ativo.
+missionscreen_no				: 	Não é possível iniciar uma missão agora.
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  INTERFACE EM JOGO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// nomes dos objetos
+planet_small 	:	Planeta Pequeno
+planet_life		:	Planeta com Vida
+star_small		: 	Estrela Pequena
+star_medium		: 	Estrela Média
+star_large		: 	Estrela Grande		
+star_neutron		:	Estrela de Nêutrons
+asteroid 		: 	Asteroide
+black_hole		: 	Buraco Negro
+
+// elementos da interface
+interface_mass		: 	Massa:
+interface_progress 	: 	Progresso:
+interface_shield 	: 	Escudo:
+interface_evolution	: 	Evolução:
+interface_xp		: 	Exp:
+interface_kills		:	Mortes:
+interface_planets 	: 	Planetas:
+interface_to		:	Para 
+
+interface_missionapi_presscontinue_pc		:	Pressione <ENTER> para continuar
+interface_missionapi_presscontinue_xbox		:	Pressione <X> para continuar
+interface_missionapi_presscontinue_tablet	:	Toque no texto para continuar
+
+interface_missionapi_yesorno_pc		:	<Y>: OK     <N>: Cancelar
+interface_missionapi_yesorno_xbox	:	<X>: OK     <Y>: Cancelar
+
+interface_menu 		: 	Menu
+interface_showinterface	:	Mostrar Interface
+interface_hideinterface	:	Ocultar Interface
+interface_abort		: 	Abortar Missão
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  Missões ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// tutoriais e missões demo
+
+mission_intro_message1		:	Bem-vindo ao Universo.
+mission_intro_message2		:	Primeiro o básico, um tutorial. \nUse as <SETAS> ou <WASD> para se mover.
+mission_intro_message2x		:	Primeiro o básico, um tutorial. \nUse {0} para se mover.
+mission_intro_message2t		:	Primeiro o básico, um tutorial. Toque na tela e segure para se mover. \nUm controle virtual também está disponível no menu de Opções.
+
+mission_intro_message4		:	Pressione {0} para alternar a interface e acompanhar seu progresso. \nVocê também pode usar o <Botão do Meio do Mouse>.
+mission_intro_message4x		:	Use {2} para ativar ou desativar a interface.\nOu pressione {0} ou {1} para ativá-la. \nPressione ambos ao mesmo tempo para desativar.
+mission_intro_message4t		:	Toque no botão 'Mostrar/Ocultar Interface' acima para acompanhar seu progresso.
+
+mission_intro_message5		:	Pressione <ESC> para pausar e abrir o menu. Tem coisas úteis lá.
+mission_intro_message5x		:	Pressione <START> para pausar e abrir o menu. Tem coisas úteis lá.
+mission_intro_message5t		:	Toque no botão 'Menu' acima para pausar o jogo e abrir o menu. \nVocê pode renascer como outro objeto no menu de Respawn Básico.
+
+mission_intro_message3		:	Quer crescer? Tente colidir com força em outros asteroides. \nVai lá, eu espero.
+mission_intro_message6		:	Tenho muitas missões para você fazer para mim. \nBasta seguir as setas enquanto a interface estiver visível.
+	
+mission_intro_message7		:	Você pode abortar uma missão com {0}. 
+mission_intro_message7x		:	Você pode abortar uma missão com {0}. 
+mission_intro_message7t		:	Para abortar uma missão atual, toque no botão 'Abortar Missão' acima. \nVocê também pode abortar tutoriais, mas não recomendo!
+
+mission_intro_message8		:	Isso deve ser tudo que você precisa por enquanto! \nFique à vontade para explorar, crescer ou fazer minhas missões. \nComplete todas e eu terei uma recompensa para você.
+mission_intro_demo1			:	Se você estivesse jogando a versão completa, eu teria missões para você. \nMas enfim... vou ficar aqui sem fazer nada...
+mission_intro_demo2			:	... esperando... \nMas fique à vontade para explorar e crescer.
+
+mission_trial_message1		:	A versão demo é ok... se você gosta disso. \nMas duvido que goste, você parece melhor que isso.
+mission_trial_message2		:	Pesquisas mostram! Pessoas legais têm a versão completa. \nVocê é legal? Poderia ser.
+mission_trial_message3		:	Demo demo demo demo demo demo demo demo demo demo. \nAinda soa estranho, não importa quantas vezes eu diga.
+mission_trial_message4		:	A versão completa tem 150% mais incrível. \nComo você vive sabendo que não é totalmente incrível?
+mission_trial_message5		:	Tudo bem então. \nEu te amaria pra sempre se comprasse a versão completa, mas não... \n... Que maldade.
+mission_trial_message6		:	:(
+mission_trial_triedlevelup	:	Desculpe, você não pode crescer além de uma estrela azul na demo. \nEu resolveria isso pra você, mas sou mal pago demais...
+
+
+mission_introplanet_message1	:	Planetas perdem massa ao colidir com objetos. \nEles precisam absorver asteroides em órbita para crescer.
+mission_introplanet_message2	:	Mova-se ao lado dos asteroides para colocá-los em órbita. \nPressione {0} para absorver o menor. \nPressione {1} para absorver todos. 
+mission_introplanet_message2x	:	Mova-se ao lado dos asteroides para colocá-los em órbita. \nPressione {0} para absorver o menor. \nPressione {1} para absorver todos. 
+mission_introplanet_message2t	:	Mova-se ao lado dos asteroides para colocá-los em órbita. \nToque no planeta para absorver todos os asteroides.
+
+mission_introlife_message1	:	A vida surge em planetas grandes o suficiente. \nMas você não pode controlá-la, ela age por conta própria.
+mission_introlife_message2	:	Cuide dela e desenvolva-a, e verá que pode ser uma grande aliada. \nMas às vezes pode ser um problema.
+
+mission_introstar_message1	:	Mova-se sobre um planeta para puxá-lo para a órbita. Requer prática. \nPressione {0} para absorver o menor objeto do seu sistema.
+mission_introstar_message1x	:	Mova-se sobre um planeta para puxá-lo para a órbita. Requer prática. \nPressione {0} para absorver o menor objeto do seu sistema. 
+mission_introstar_message1t	:	Mova-se sobre um planeta para puxá-lo para a órbita. Requer prática. \nVocê pode arrastar um planeta até sua estrela para absorvê-lo. \nOu dar dois toques!
+
+mission_introstar_message2	:	Pressione {0} para absorver todos os asteroides do sistema. \nAssim você evita absorver um planeta sem querer.
+mission_introstar_message2x	:	Pressione {0} para absorver todos os asteroides do sistema. \nAssim você evita absorver um planeta sem querer.
+mission_introstar_message2t	:	Toque na sua estrela para absorver todos os asteroides. \nToque em um planeta para absorver os dele.
+mission_introstar_message3	:	Use {0} e {1} para alternar entre os objetos do sistema. \nPressione {2} para absorver o planeta selecionado.
+mission_introstar_message3x	:	Use {0} e {1} para alternar entre os objetos do sistema. \nPressione {2} para absorver o planeta selecionado.
+mission_introstar_message3t	:	Toque na interface no canto superior esquerdo para alternar. \nOu toque diretamente no objeto.
+
+mission_introstar_message4	:	Você também pode usar <Clique Esquerdo> para selecionar um objeto. \n<Clique Direito> para absorver todos os asteroides ou um planeta!
+
+mission_introrespawn_message1	: 	Se você for destruído durante uma missão, eu te trarei de volta ao estado inicial. Sou legal assim.
+
+mission_introsaved_message1		:	Que sistema bonito você tem aí. \nSeria uma pena se algo acontecesse com ele...
+mission_introsaved_message2		:	Você deveria pausar e ir em "Sistemas Salvos". \nLá você pode salvar e carregar sistemas quando quiser!
+
+mission_introblackhole_message1		:	A única coisa que vence um buraco negro é um maior ainda! \nBuracos negros maiores que você aparecem com setas vermelhas.
+
+
+// asteroid tree 1 : Assassin
+
+mission_assassin1_message1	:	Preciso que faça um trabalho sujo. \nAlgumas naves rebeldes precisam ser eliminadas. Aqui está a primeira.
+mission_assassin1_success	:	Bom, muito bom. Entrarei em contato.
+mission_assassin1_dead		:	Não se preocupe, não vou te punir por isso. \nVolte e termine o trabalho. \nTalvez não consiga destruí-la diretamente.
+
+mission_assassin2_message1	:	Você vai precisar ser mais criativo desta vez. \nDestrua essa nave do jeito que conseguir.
+mission_assassin2_success	:	Ótimo trabalho. Acho que você está pronto para algo maior.
+mission_assassin2_dead		:	Talvez precise atrair essa nave para o perigo, como inimigos. \nVolte lá!
+
+mission_assassin3_message1	:	Essa é difícil. Use o que aprendeu. \nDestrua essa nave miserável.
+mission_assassin3_success	:	Excelente, você foi muito bem. \nMas sua utilidade aqui acabou.
+mission_assassin3_dead		:	Muito amador. Mas sou paciente. \nVolte e destrua essa nave.
+
+
+// planet tree 3 : Fine Art
+
+mission_pruning1_message1		:	Esta escultura de sistema solar tem mais de 150 trilhões de anos. \nÉ um exemplo divino de design neocosmológico.
+mission_pruning1_message2		:	Remova todas as luas de asteroides indesejadas desta obra. \nMas não toque em mais nada, nem que seja por um instante.
+mission_pruning1_success		:	Ahh, uma obra-prima restaurada à perfeição. \nMuitos olhos agradecerão.
+mission_pruning1_fail			:	Agora não é hora para sua “arte performática suicida”!
+mission_pruning1_fail_destroyed	:	Como você pôde? Tem ideia de quanto vai custar essa restauração?
+
+mission_orbitfixer_message1		:	Eu acabei configurando essa obra de arte vanguardista errado. \nTodas as órbitas precisam girar no sentido anti-horário! Arrume isso! \nSem punição por se destruir.
+mission_orbitfixer_success		:	Arte interativa no seu melhor. \nObrigado por participar.
+mission_orbitfixer_fail			:	O mundo perdeu sua maior beleza pelas mãos de um bruto.
+
+mission_pruning2_message1		:	Aff, algumas formas de vida incultas estão aprontando de novo. \nElas se instalaram em uma das minhas melhores esculturas.
+mission_pruning2_message2		:	Rápido, reduza a massa desses planetas para que a vida não possa existir! \nMas não destrua nada! Essa obra é insubstituível!
+mission_pruning2_success		:	Ah, simplesmente divino, obra digna dos deuses!
+mission_pruning2_fail			:	Que tedioso.
+mission_pruning2_fail2			:	Você é um deles, não é?! Monstro! \nSuma daqui!
+
+// planet tree 4 : Concert
+
+mission_untouchableplanet_message1	:	Boas notícias, cara, achei uma audição pra você!
+mission_untouchableplanet_message2	:	Mas cuidado, não toque em nada ou seu equipamento vai quebrar! \nNão se preocupe com as naves, essas marcas saem fácil.
+mission_untouchableplanet_success	:	Isso aí! Você conseguiu o trabalho! Você vai ser... o palco! \nÉ, eu sei, não é lá essas coisas, mas é melhor que nada.
+mission_untouchableplanet_fail		:	Ah, não dá pra te apresentar assim!
+
+mission_planetdodger_message1	:	Certo! Tudo pronto, termine de ler e comece o show! \nCuidado com os fãs malucos, eles podem querer invadir o palco!
+mission_planetdodger_success	:	Cara, isso foi incrível. Que show. \nMandou bem.
+mission_planetdodger_fail		:	Ah não, agora que tava ficando bom! Estragou tudo...
+
+
+// star tree 1 : Duel
+
+mission_duelstar2_message1	:	E aí garoto, acha que consegue ser campeão? \nAcabe com esse sistema estelar. Vamos ver do que você é capaz.
+mission_duelstar2_success	:	Sua primeira vitória. Mas não se ache, ainda tem muito caminho.
+mission_duelstar2_fail		:	Sabia.
+mission_duelstar2_run		:	Nunca vai ser campeão fugindo, garoto.
+
+mission_duelstar3_message1	:	Hora de virar profissional. Aqui está sua primeira luta. \nNão me decepcione.
+mission_duelstar3_success	:	Quase no topo da sua categoria. \nQuase...
+mission_duelstar3_fail		:	Relaxa garoto. \nNinguém vê seus fracassos no vazio.
+mission_duelstar3_run		:	Vai lá, continua fugindo... covarde.
+
+mission_duelstar4_message1	:	Agora é sério. Lutando contra o campeão. \nAcha que aguenta?
+mission_duelstar4_success	:	Todos saúdem o novo campeão!
+mission_duelstar4_fail		:	Você nunca ia ganhar. Ainda bem que apostei no outro.
+mission_duelstar4_run		:	Você é uma vergonha pro esporte. \nVencedores não fogem.
+
+// star tree 2 : Invaders
+
+mission_xenosstar1_message1	:	Cuidado, ALIENS!!!!!!!
+mission_xenosstar1_success	:	Ufa, foi por pouco. São aliens mesmo? Sei lá.
+mission_xenosstar1_fail		:	Eles te pegaram.
+
+mission_xenosstar2_message1	:	Mais aliens! Provavelmente querem seus recursos!
+mission_xenosstar2_success	:	Missão cumprida.
+mission_xenosstar2_fail		:	Parece que os mísseis te pegaram.
+
+mission_xenosstar3_message1	:	Espera, a guerra não acabou! Lá vêm eles de novo!
+mission_xenosstar3_success	:	Bom, todos os aliens morreram. Isso é paz? \nAh, tanto faz.
+mission_xenosstar3_fail		:	Você desiste fácil demais.
+
+// star tree 3 : Brethren
+
+mission_lifeprotector1_msg1_1		:	Você deseja se juntar à Irmandade do Buraco Sagrado? \nSua primeira tarefa é a de missionário.
+mission_lifeprotector1_msg1_2		:	Converta este pequeno planeta mostrando que pode protegê-lo. \nVá encontrá-lo agora.
+mission_lifeprotector1_msg2_1		:	Proteja aquele planeta, irmão estrela! \nMostre por que ele deve confiar em você!
+mission_lifeprotector1_success		:	Você provou que seu caminho é o correto. \nMuitos planetas irão segui-lo!
+mission_lifeprotector1_fail			:	Não é assim que se demonstra força, irmão...
+mission_lifeprotector1_deadplanet	:	Como confiar em você se não consegue proteger nem um?
+
+mission_untouchablestar_msg1_1		:	Você precisa ter pelo menos 4 planetas seguidores \nantes de iniciar esta missão. Vá buscá-los ou aborte.
+mission_untouchablestar_msg2_1		:	Seu próximo teste, irmão estrela, é a peregrinação. \nViaje longas distâncias protegendo seus seguidores.
+mission_untouchablestar_msg2_2		:	Não deixe nada colidir com seu sistema. \nSe ficar com menos de 4 seguidores, você falha.
+mission_untouchablestar_success		:	Você protegeu seus seguidores e chegou ao destino. \nBom trabalho, irmão.
+mission_untouchablestar_success10	:	Você protegeu 10 seguidores! Impressionante! \nO buraco sagrado os abençoou.
+mission_untouchablestar_fail		:	Proteja seus seguidores, irmão!
+mission_untouchablestar_failmany	:	Não tente proteger mais do que pode! \nVocê não é forte o suficiente!
+mission_untouchablestar_lostplanet	:	Você precisa de pelo menos 4 seguidores!
+
+mission_stripperstar_message1	:	Você provou seu valor. Agora pode conhecer o buraco sagrado. \nHonre-o sacrificando 6 seguidores.
+mission_stripperstar_success	:	Seus sacrifícios foram aceitos. \nBem-vindo, irmão estrela.
+mission_stripperstar_fail		:	Falhar diante do seu deus? \nVergonhoso...
+mission_stripperstar_fail_hole	:	...........................................................
+mission_stripperstar_fail_suck 	:	Não se aproxime demais do nosso deus! Ele irá consumi-lo!
+mission_stripperstar_popup		:	Sacrifícios:
+
+// star tree 4 : Heist
+
+mission_planetstealer1_msg1_1		:	Estou planejando um grande roubo. \nUm guarda tem um planeta-chave de acesso que precisamos.
+mission_planetstealer1_msg1_2		:	Pegue rápido. Assim que fizer isso, virá reforço.
+mission_planetstealer1_msg2_1		:	Boa! Agora leve para nossa base!
+mission_planetstealer1_msg3_1		:	Você destruiu a segurança. \nAgora anda logo!
+mission_planetstealer1_success		:	Perfeito, conseguimos. \nFalaremos em breve.
+mission_planetstealer1_fail_dead	:	Pelo menos é fácil te substituir.
+mission_planetstealer1_fail_swipe	:	Isso que você fez... \nNão faça de novo.
+mission_planetstealer1_fail_lost	:	Cuidado! Precisa manter em órbita!
+mission_planetstealer1_fail_lostcom	:	Cadê? Você perdeu... \nPegue outro depois...
+
+mission_planetstealer2_msg1_1		:	Esse planeta nos deu acesso ao sistema. \nPrecisamos de dados.
+mission_planetstealer2_msg1_2		:	Coloque 3 planetas roubados em órbita.
+mission_planetstealer2_success		:	Perfeito. \nVamos precisar de você na fuga.
+mission_planetstealer2_fail_dead	:	Você decepcionou o time.
+mission_planetstealer2_popup		:	Planetas Roubados:
+
+mission_getaway_message1	:	Alvo garantido, mas estamos em alerta! \nFuja da polícia!
+mission_getaway_success		:	Conseguimos fugir!!!!!
+mission_getaway_fail		:	Fomos presos... \nTentamos de novo em alguns bilhões de anos...
+mission_getaway_offroad		:	Você escapou... mas estamos perdidos...
+
+// boss final
+
+mission_finalbossmessage_message1	:	Bom, você completou tudo.
+mission_finalbossmessage_message2	:	Como recompensa posso te dar poderes divinos!
+mission_finalbossmessage_message3	:	Venha até meu escritório.
+mission_finalbossmessage_message4	:	Mas precisa ser uma estrela.
+
+mission_finalboss_msg1_1		:	Muita burocracia... melhor te destruir.
+mission_finalboss_msg2_1		:	Você não vai conseguir!
+mission_finalboss_msg2_4		:	Olha ali! Um esquilo!
+mission_finalboss_msg2_5		:	Para com isso!
+mission_finalboss_msg2_6		:	Ah não.
+mission_finalboss_fail			:	Não atendo mortos.
+mission_finalboss_fail2			:	Fugindo? Hahaha.
+mission_finalboss_abort			:	Fraco.
+mission_finalboss_cheat			:	Sem trapaça!
+
+// desafios
+
+challenges_title			:	Missões de Desafio:
+challenges_secondtitle		:	Desafio Anterior:
+
+challenges_asteroid			:	Desafios de Asteroide
+challenges_planet			:	Desafios de Planeta
+challenges_star				:	Desafios de Estrela
+challenges_multistar		:	Desafios Multi-Estrela
+challenges_blackhole		:	Desafios de Buraco Negro
+challenges_god				:	Desafios de Deus
+challenges_dark				:	???? Desafios
+
+challenges_easy			:	Fácil:
+challenges_medium		:	Médio:
+challenges_hard			:	Difícil:
+challenges_best			:	Melhor:
+challenges_incomplete	:	Incompleto
+
+challenges_popup					:	\nTem certeza que deseja iniciar este desafio?
+challenges_alreadyinmission			:	Você já está em uma missão!
+challenges_denied					:	Não é possível iniciar desafios agora.
+challenges_triedtosetphysicspopup	:	Não é possível alterar opções durante desafios.
+
+challenges_newhighscore		:	Novo Recorde!
+challenges_latestscore		:	Pontuação Atual:
+challenges_latestfail		:	Falhou
+
+challenges_abort			:	Desafio abortado.
+challenges_respawn			:	Respawn manual ativado.
+challenges_destroyed		:	Destruído. Missão falhou.
+challenges_controlchange	:	Sem trapaça!
+challenges_pass				:	Desafio concluído!
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  DESAFIOS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+challenge_units_hits		:	Acertos
+challenge_units_stolen		:	Roubados
+challenge_units_time		:	Tempo
+challenge_units_timeleft	:	Tempo Restante
+challenge_units_kills		:	Abates
+challenge_units_damage		:	Dano
+challenge_units_collisions	:	Colisões
+challenge_units_points		:	Pontos
+
+challenge_cantleavecircle				:	Você não pode sair do círculo! Missão falhou.
+
+
+challenge_concertencore_name			:	Bis do Show
+challenge_concertencore_description		:	Os fãs querem um bis! Tente receber o mínimo de acertos possível!
+challenge_concertencore_unlock			:	Complete a missão "Concerto" para desbloquear este desafio!
+
+challenge_planetsurvival_name			:	Sobrevivência Planetária
+challenge_planetsurvival_description	:	Elimine o máximo de nômades possível em 60 segundos!
+
+challenge_stayyoung_name				:	Permaneça Jovem
+challenge_stayyoung_description			:	Não evolua para planeta pelo maior tempo possível! \nNão saia do círculo!
+
+challenge_planetstealer_name			:	Ladrão de Planetas
+challenge_planetstealer_description		:	Explore e roube o máximo de planetas possível de outras estrelas. \nSe perder um planeta roubado, o desafio acaba. \nSem dano por colisão.
+
+challenge_getawayagain_name				:	Fuga Novamente
+challenge_getawayagain_description		:	Hora de fugir de novo! Tente receber o mínimo de dano possível!
+challenge_getawayagain_unlock			:	Complete a missão "Assalto" para desbloquear este desafio!
+
+challenge_darkdodger_name				:	Desviador Sombrio
+challenge_darkdodger_description		:	Evite asteroides de matéria escura pelo maior tempo possível. \nNão saia do círculo!
+
+challenge_atom_name						:	Átomo
+challenge_atom_description				:	Empurre os planetas vermelhos para fora do círculo. \nMantenha os planetas azuis dentro. \nSem dano por colisão.
+challenge_atom_fail						:	Não deixe o planeta azul sair do círculo!
+
+challenge_slingshot_name				:	Estilingue
+challenge_slingshot_description			:	Avance por um mar de buracos negros.
+
+challenge_starduel_name					:	Duelo Caótico
+challenge_starduel_description			:	Um duelo épico. \nDestrua o sistema inimigo no menor tempo possível.
+
+challenge_geometry_name					:	Geometria Zumbi
+challenge_geometry_description			:	Sobreviva o máximo que puder.
+
+challenge_snowfight_name				:	Guerra de Neve
+challenge_snowfight_description			:	Ganhe um ponto ao acertar a estrela inimiga com um planeta de gelo. \nPerca um ponto se for atingido! \nTermina quando uma estrela perder todos os planetas.
+challenge_snowfight_run					:	Não fuja!
+challenge_snowfight_destroy				:	Isso não é nada esportivo.
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  OBJETIVOS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+objective_supremacy_name					:	Supremacia
+objective_supremacy_description				:	Como estrela, tenha um planeta com vida em órbita com 100 abates.
+
+objective_asteroidnursery_name				:	Berçário de Asteroides
+objective_asteroidnursery_description		:	Tenha 15 luas de asteroides ao redor do seu planeta.
+
+objective_bigcrunch_name					:	Big Crunch
+objective_bigcrunch_description				:	Cresça tanto a ponto de absorver todo o universo.
+
+objective_betrayal_name						:	Traição
+objective_betrayal_description				:	Torne-se um buraco negro a partir de um sistema multiestelar.
+
+objective_entity_name						:	A Entidade
+objective_entity_description				:	O que é a entidade?
+
+objective_superclock_name					:	Super Relógio
+objective_superclock_description			:	Tenha 10 planetas orbitando no sentido horário.
+
+objective_overcrowding_name					:	Superlotação
+objective_overcrowding_description			:	Alcance o máximo de vida possível no seu sistema.
+
+objective_elite_name						:	Elite
+objective_elite_description					:	Crie um sistema com 6 estrelas.
+
+objective_speedcycle_name					:	Ciclo Rápido
+objective_speedcycle_description			:	Vá do Big Bang ao Big Crunch em menos de 20 minutos. Sem Opções de Deus ou respawn.
+
+objective_flyingblind_name					:	Voo às Cegas
+objective_flyingblind_description			:	Vá de um buraco negro novo até o Big Crunch sem morrer ou respawnar. Sem Opções de Deus.
+
+objective_gentle_name						:	Suave, mas Firme
+objective_gentle_description				:	Complete a 2ª parte da missão "Bela Arte" sem morrer, sem vida evoluída no planeta e sem Opções de Deus.
+
+objective_ninja_name						:	Ninja
+objective_ninja_description					:	Complete todas as partes de "Assassino" sem morrer e sem Opções de Deus.
+
+objective_igotthis_name						:	Deixa Comigo
+objective_igotthis_description				:	Destrua todas as naves na primeira parte de "Assalto" antes de concluir. Sem Opções de Deus.
+
+objective_hoboStar_name						:	Estrela Errante
+objective_hoboStar_description				:	Inicie a 3ª parte de "Duelo" com uma estrela sem planetas e vença em menos de 3 minutos. Sem Opções de Deus.
+
+objective_imlate_name						:	Estou Atrasado!
+objective_imlate_description				:	Complete a 1ª parte de "Concerto" em menos de 1 minuto e sem Opções de Deus.
+
+objective_phantom_name						:	Solista Planetário
+objective_phantom_description				:	Complete a 2ª parte de "Concerto" sem vida evoluída e sem Opções de Deus.
+
+objective_kitties_name						:	Por que você me matou?
+objective_kitties_description				:	Por quê?
+
+objective_lost_name							:	Perca-se
+objective_lost_description					:	Perca-se.
+
+objective_grindstar_name					:	Estrela Massiva
+objective_grindstar_description				:	Crie um sistema com 40 estrelas.
+
+objective_idontsuck_name					:	Cara, Eu Não Sou Ruim!
+objective_idontsuck_description				:	Complete todas as missões sem usar Opções de Deus.
+
+objective_darkchampion_name					:	Campeão Sombrio
+objective_darkchampion_description			:	Derrote o chefe final como uma estrela de matéria escura. Sem Opções de Deus.
+
+objective_masterthief_name					:	Mestre Ladrão
+objective_masterthief_description			:	Roube 10 planetas no desafio "Ladrão de Planetas".
+
+objective_challengenovice_name				:	Novato em Desafios
+objective_challengenovice_description		:	Complete todos os desafios com qualquer pontuação.
+
+objective_challengepro_name					:	Pro dos Desafios
+objective_challengepro_description			:	Complete todos os desafios com pontuação difícil.
+
+objective_snowfight_name					:	Estrela Floco de Neve
+objective_snowfight_description				:	Faça 4 pontos no desafio "Guerra de Neve".
+
+
+// ~~~~~~~~~~~~~~~~~~~~~  ESTATÍSTICAS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+stat_time_name					:	Tempo de Jogo
+stat_traveldistance_name		:	Distância Percorrida
+
+stat_asteroidsdestroyed_name	:	Asteroides Destruídos
+stat_planetsdestroyed_name		:	Planetas Destruídos
+stat_starsdestroyed_name		:	Estrelas Destruídas
+
+stat_shipsdestroyedbyyourlife_name		:	Naves Destruídas pela Vida
+stat_mostasteroidsaroundplanet_name		:	Maior Número de Asteroides ao Redor do Planeta
+stat_fastestspeedcycle_name				:	Melhor Tempo de Ciclo Rápido
+
+stat_largestMultiStarSystem_name		:	Maior Sistema Multiestelar
+
+
+
+
+
